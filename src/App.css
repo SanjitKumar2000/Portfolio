@@ -1,0 +1,528 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+.fixed-top{
+  box-shadow: 0px 15px 10px -15px #000000;
+}
+
+.App {
+  text-align: center;
+}
+
+.nav-link {
+  display: inline-block;
+  padding: 10px 20px;
+  width: 120px;
+  font-weight:600;
+  border: none;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  text-decoration: none; 
+}
+
+.nav-link:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+.nav-link:hover:before {
+  opacity: 1;
+}
+
+
+.home {
+  background-image: url("images/ranger.png");
+  background-size: cover;
+  height: 930px;
+  position: relative;
+}
+
+.myImg{
+  float: left;
+  width: 40%;
+  margin-top: 160px;
+  /* background-color: #00ffd5; */
+  height: 70%;
+}
+
+.me{
+  background-image: url("images/DSC_9372-01.jpeg");
+  background-size: cover;
+  width: 30vw;
+  height: 100%;
+  margin-left: 5vw;
+}
+
+.myInfo{
+  float: right;
+  width: 60%;
+}
+
+.name {
+  font: bold 40px Georgia, serif;
+  padding-top: 270px;
+  color: #000000;
+}
+
+.info {
+  font-size: 120%;
+  /* padding-top: %; */
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+/* Project button starts */
+.probtn {
+  margin-top: 45px;
+  width: 220px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  background: #000000;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.probtn:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+.probtn:active {
+  color: #000000
+}
+
+.probtn:active:after {
+  background: transparent;
+}
+
+.probtn:hover:before {
+  opacity: 1;
+}
+
+.probtn:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  font-weight: 600;
+  left: 0;
+  border: transparent;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 400% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
+
+/* Project button ends */
+/* Scrol wheel animation starts */
+
+.scroll-downs {
+  position: absolute;
+  bottom: 5px;
+  left: 49%;
+  right: 47vw;
+}
+.mousey {
+  width: 3px;
+  padding: 10px 15px;
+  height: 35px;
+  border: 2px solid #000000;
+  border-radius: 25px;
+  opacity: 0.75;
+  box-sizing: content-box;
+}
+.scroller {
+  width: 3px;
+  height: 10px;
+  border-radius: 25%;
+  background-color: #000000;
+  animation-name: scroll;
+  animation-duration: 2.2s;
+  animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+  animation-iteration-count: infinite;
+}
+@keyframes scroll {
+  0% { opacity: 0; }
+  10% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(15px); opacity: 0;}
+}
+
+/* Scrol wheel animation ends */
+
+.about{
+  background-image: url("images/white-abstract.png");
+  background-repeat: no-repeat;
+  background-size:cover;
+  width: 100%;
+  height: 930px;
+  position: relative;
+}
+
+.top-div{
+  height: auto;
+  padding-top: 3%;
+}
+.left-div{
+  text-align: start;
+  padding-left: 10%;
+  width: 44%;
+  margin-left: 5vw;
+  margin-top: 5%;
+  float: left;
+  height: 560px;
+}
+
+.right-div{
+  text-align: start;
+  margin-left: 1px;
+  width: 44%;
+  float: right;
+  height: 560px;
+  position: relative;
+  margin-top: 5%;
+}
+
+.line{
+  background-color: #bda000;
+  width: 50px;
+  border-radius: 5px;
+  height: 4px;
+  margin-left: 48vw;
+  margin-top: 17px;
+  margin-bottom: 17px;
+}
+
+.skills{
+  height: auto;
+  padding: 10px;
+  width: 60%;
+  margin-right: 25%;
+  position: relative;
+}
+
+.skill{
+  border: none;
+  color: #000000;
+  font-weight: 600;
+  background: #cccccc;
+  padding: 10px;
+  position: relative;
+  border-radius: 10px;
+  margin: 3px;
+  margin-bottom: 17px;
+}
+
+.projects{
+  width: 100%;
+  height: 860px;
+  background-image: url("images/proback.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  position: relative;
+}
+
+.project{
+  height: auto;
+  padding-top: 3%;
+}
+
+.photo{
+  background-image: url("images/mac21.png");
+  background-repeat: no-repeat;
+  background-size:contain;
+  width: 40%;
+  margin-left: 10%;
+  margin-top: 5%;
+  height: 370px;
+  float: left;
+  position: relative;
+}
+
+.proinfo{
+  padding-top: 5%;
+  float: right;
+  width: 40%;  
+  margin-top: 2%;
+  height: auto;
+  margin-right: 10%;
+  position: relative;
+}
+.prodisc{
+  font-size :1.5em;
+}
+
+.aa{
+  width: 15vw;
+  height: 50px;
+  position:relative;
+}
+.ab{
+  width: 15vw;
+  height: 50px; 
+  position:relative; 
+  margin-left:5px;
+}
+
+.contact{
+  height: 350px;
+  background-color: #000000;
+  padding-left: 14vw;
+  padding-top: 50px;
+}
+.main{
+  /* background-color: #00ffd5; */
+  width: 70vw;
+  height: 250px;
+  color: white;
+}
+.social{
+  float: right;
+  width: 20vw;
+  /* background-color: rgb(0, 66, 247); */
+  height: 120px;
+  text-align: start;
+}
+.bottomInfo{
+  width: 30vw;
+  /* background-color: rgb(0, 66, 247); */
+  height: 120px;
+  text-align: start;
+}
+
+.hrtag{
+  color:#ffffff;
+  margin-bottom: 30px;
+}
+
+@media only screen and (min-width: 600px) {
+  .name {
+    font-size: 65px;
+    padding-top: 270px;
+  }
+  .info {
+    font-size: 150%
+  }
+}
+
+@media only screen and (max-width: 825px) {
+  .top-div{
+    height: auto;
+    position: relative;
+  }
+  .details{
+    padding-left: 0%;
+  }
+  .left-div{
+    width: 84%;
+    height: auto;
+    margin-right: 5vw;
+    position: relative;
+  }
+  .right-div{
+    width: auto;
+    height: auto;
+    position: relative;
+    float: left;
+    margin-left: 2vw;
+    padding-left: 5%;
+    padding-top: 20px;
+  }
+  .about{
+    position: relative;
+    height: 1000px;
+  }
+  .project{
+    position: relative;
+  }
+  .skills{
+    height: auto;
+    width: auto;
+    padding: 0px;
+    width: 100%;
+  }
+  .contact{
+    padding-top: 20px;
+  }
+  
+  .social{
+    float: none;
+    width: 70vw;
+  }
+  .bottomInfo{
+    width: 70vw;
+    height: 80px;
+  }
+
+} 
+
+
+@media only screen and (max-width: 900px) {
+  .cont{
+    margin-top: 13px;
+  }
+  .photo{
+    float: none;
+    height: 230px;
+    margin-left: 20%;
+    width: 340px;
+  }
+  .proinfo{
+    float: none;
+    padding-top: 0%;
+    margin-top: 0%;
+    margin-left: 20%;
+    width: 340px;
+  }
+  .projects{
+    height: 950px;
+  }
+  .aa{
+    width: 120px;
+  }
+  .ab{
+    width: 120px;
+  }
+
+
+  .myImg{
+    float: none;
+    width: 100%;
+    margin-top: 70px;
+    height: 40%;
+  }
+  .me{
+    background-image: url("images/DSC_9372-01.jpeg");
+    background-size: cover;
+    width: 70vw;
+    height: 100%;
+    margin-left: 15vw;
+  }
+  .myInfo{
+    float: none;
+    width: 100%;
+  }
+  .name{
+    padding-top: 0%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .left-div{
+    margin-left: 2vw;
+    padding-left: 5%;
+  }
+  .prodisc{
+    font-size: 1.2em;
+  }
+  .photo{
+    margin-top: 10%;
+  }
+}
+
+@media only screen and (max-width: 478px) {
+  .name{
+    font-size: 35px;
+  }
+  
+  .about{
+    height: 1300px;
+  }
+  .right-div{
+    width: 95%;
+  }
+  .aa{
+    float: left;
+    width: 120px;
+    height: 50px;
+    position:relative;
+  }
+  .ab{
+    float: left;
+    width: 120px;
+    height: 50px; 
+    position:relative; 
+    margin-left:5px;
+  }
+  .photo{
+    margin-left: 15%;
+    width: 70vw;
+    height: 190px;
+  }
+  .proinfo{
+    margin-left: 15%;
+    width: fit-content;
+  }
+  .probtn{
+    width: 120px;
+  }
+  .prodisc{
+    margin-bottom: 0px;
+  }
+  .aa{
+    margin-left: 5%;
+  }
+  .ab{
+    margin-top: 1%;
+    margin-left: 5%;
+    margin-right: 30%;
+  }
+  .projects{
+    height: 1000px;
+  }
+  .hrtag{
+    margin-top: 30px;
+    margin-bottom: 0px;
+    margin-bottom: 10px;
+  }
+  .social{
+    height: 75px;
+  }
+}
