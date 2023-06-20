@@ -1,4 +1,3 @@
-https://portfolio-c5be9.web.app/
 # Getting Started with Create React App
 This project was bootstrapped with [my Portfolio link](https://portfolio-c5be9.web.app).
 
